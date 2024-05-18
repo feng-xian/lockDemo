@@ -112,7 +112,6 @@ class LockdemoApplicationTests {
     public int lockStock()
     {
         String clientId = UUID.randomUUID().toString();
-//        System.out.println("=============" + clientId);
         String lockKey="lock:stock";
 
 
