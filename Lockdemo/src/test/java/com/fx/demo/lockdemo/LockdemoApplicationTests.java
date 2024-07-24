@@ -1,8 +1,10 @@
 package com.fx.demo.lockdemo;
 
+import com.fx.demo.lockdemo.entity.User;
 import com.fx.demo.lockdemo.lock_demo.DistributedLockTest;
 import com.fx.demo.lockdemo.lock_demo.RedisDistributedLock;
 import com.fx.demo.lockdemo.lock_demo.RedissonLockUtil;
+import com.fx.demo.lockdemo.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.redisson.api.RLock;
 import org.redisson.api.RReadWriteLock;
@@ -35,12 +37,14 @@ class LockdemoApplicationTests {
     @Resource
     private RedissonLockUtil redissonLockUtil;
 
+    @Resource
+    private UserService userService;
+
     @Test
     void contextLoads() {
-        redisTemplate.opsForValue().set("testKey", "testValue");
 
-        Object key = redisTemplate.opsForValue().get("testKey");
-        System.out.println(key);
+        userService.updateMoney();
+
 
     }
 

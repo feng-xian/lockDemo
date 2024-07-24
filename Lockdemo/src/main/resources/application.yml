@@ -16,8 +16,18 @@ spring:
     port: 6379
     timeout: 10000
 
+  # mysql配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test_ehome?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2b8
+    username: root
+    password: 18786711938
 
-
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.fx.demo.lockdemo.entity
+  configuration:
+    map-underscore-to-camel-case: true
 
 
 
