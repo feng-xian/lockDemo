@@ -29,5 +29,17 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
 
+# 配置namesrv地址
+rocketmq:
+  name-server: 192.168.20.154:9876
+  producer:
+    # 配置生产者组名称
+    group: myProducerGroup
+  consumer:
+    # 配置消费者组名称
+    group: myConsumerGroup
+    # 配置消费者消息监听器的线程数
+    listener-thread-count: 5
+
 
 
