@@ -4,7 +4,7 @@ package com.fx.demo.lockdemo.algorithm.sort;
 public class XOR {
 
     public static void main(String[] args) {
-        int[] arr = {1,1,2,2,3,3,3,3,4,4,4,4,5,5,5};
+        int[] arr = {1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5};
         int oddNum = findOddNum(arr);
         System.out.println(oddNum);
     }

@@ -92,7 +92,6 @@ public class mergeSort {
 
         }
 
-
     }
 
     private static void swap(int[] arr, int i, int i1) {
