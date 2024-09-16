@@ -14,8 +14,8 @@ import java.util.Arrays;
 public class QuestionCode05 {
 
     public static void main(String[] args) {
-        int[] arr = {};
-        int k = 3;
+        int[] arr = {7, 5, 1, 1, 3, 3};
+        int k = 2;
         int count = maxGame(arr, k);
         System.out.println(count);
     }
@@ -31,21 +31,23 @@ public class QuestionCode05 {
         int gameCount = 0;
 
         ArrayList<Integer> old = new ArrayList<>();
-        while (R < arr.length - 1) {
+        while (R < arr.length) {
 
-            if ((arr[L] - arr[R]) == k) {
+            if ((arr[R] - arr[L]) == k) {
                 gameCount++;
                 old.add(R);
-
                 R++;
-//                while ()
-
+                while (L < R) {
+                    if (!old.contains(++L)) {
+                        break;
+                    }
+                }
+            } else {
+                R++;
             }
-
-
         }
 
-        return 0;
+        return gameCount;
     }
 
 
