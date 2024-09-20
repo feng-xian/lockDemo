@@ -1,4 +1,4 @@
-package com.fx.demo.lockdemo.algorithm.practice_questions;
+package com.fx.demo.lockdemo.algorithm.practice_questions.pratice;
 
 /**
  * 给定一个有序数组arr，代表坐落在X轴上的点

@@ -1,4 +1,4 @@
-package com.fx.demo.lockdemo.algorithm.practice_questions;
+package com.fx.demo.lockdemo.algorithm.practice_questions.pratice;
 
 /**
  * 现有司机N*2人，调度中心会将所有司机平分给A、B两个区域

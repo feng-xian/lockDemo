@@ -1,4 +1,4 @@
-package com.fx.demo.lockdemo.algorithm.practice_questions;
+package com.fx.demo.lockdemo.algorithm.practice_questions.pratice;
 
 import java.util.LinkedList;
 import java.util.Objects;

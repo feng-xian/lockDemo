@@ -1,4 +1,4 @@
-package com.fx.demo.lockdemo.algorithm.practice_questions;
+package com.fx.demo.lockdemo.algorithm.practice_questions.pratice;
 
 /**
  * 分糖果问题

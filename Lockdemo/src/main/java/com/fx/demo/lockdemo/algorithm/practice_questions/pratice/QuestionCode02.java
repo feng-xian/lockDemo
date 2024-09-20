@@ -1,4 +1,4 @@
-package com.fx.demo.lockdemo.algorithm.practice_questions;
+package com.fx.demo.lockdemo.algorithm.practice_questions.pratice;
 
 /**
  * 一个数组中只有两种字符'G'和'B’想让所有的G都放在左侧，
