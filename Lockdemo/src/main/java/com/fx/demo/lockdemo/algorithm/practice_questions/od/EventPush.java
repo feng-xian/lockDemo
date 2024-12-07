@@ -10,7 +10,7 @@ import java.util.Scanner;
  * Ai和Bj均为正整数，A、B已经按照从小到大排好序，A、B均不为空，
  * 给定一个距离R(正整数)，
  * 列出同时满足如下条件的所有（Ai, Bj）数对：
- *
+ * <p>
  * Ai <= Bj
  * Ai, Bj之间的距离小于等于R
  * 在满足1,2的情况下，每个Ai只需输出距离最近的Bj
@@ -41,10 +41,11 @@ public class EventPush {
         }
     }
 
+
     private static List<String> solution(int[] arrA, int[] arrB, int r) {
         ArrayList<String> list = new ArrayList<>();
 
-        int  ia = 0, ib = 0;
+        int ia = 0, ib = 0;
 
         while ((ia < arrA.length) && (ib < arrB.length)) {
             if (arrA[ia] > arrB[ib]) {
@@ -55,30 +56,9 @@ public class EventPush {
                 ia++;
                 continue;
             }
-            if (ia == ib) {
-                String string = arrA[ia++] + " " + arrB[ib++];
-                list.add(string);
-                continue;
-            }
 
-            if (ia > ib) {
-                int ib_c = ib + 1;
-                int successIndex = ib;
-                while (ib_c < arrB.length) {
-                    if (arrA[ia] <= arrB[ib_c] && (arrA[ia] - arrB[ib_c]) <= r && (ib_c - ia) < (successIndex - ia)) {
-                        successIndex = ib_c;
-                        ib_c++;
-                    }
-                    else {
-                        break;
-                    }
-                }
-                String string = arrA[ia++] + " " + arrB[successIndex++];
-                list.add(string);
-                ib = successIndex;
-                continue;
-            }
-
+            String string = arrA[ia++] + " " + arrB[ib++];
+            list.add(string);
 
         }
 
