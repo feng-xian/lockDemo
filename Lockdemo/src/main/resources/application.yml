@@ -19,7 +19,7 @@ spring:
   # mysql配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/test_ehome?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2b8
+    url: jdbc:mysql://127.0.0.1:3306/test_ehome?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2b8
     username: root
     password: 18786711938
 
