@@ -75,6 +75,19 @@
 <!--            <version>2.1.1</version>-->
 <!--        </dependency>-->
 
+        <!-- Elasticsearch 核心 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>
+
+        <!-- 可选：解决 netty 版本冲突 -->
+<!--        <dependency>-->
+<!--            <groupId>io.netty</groupId>-->
+<!--            <artifactId>netty-all</artifactId>-->
+<!--            <version>4.1.86.Final</version>-->
+<!--        </dependency>-->
+
     </dependencies>
 
 
